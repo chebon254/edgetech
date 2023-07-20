@@ -86,12 +86,16 @@ html {
 }
 
 .nav-container .logo img {
-    width: 240px;
+    width: 260px;
 }
 
 .nav-links a {
     padding: 10px;
     color: #0d3814;
+    margin: 0px 15px;
+    font-size: 18px;
+    letter-spacing: 1.2px !important;
+    font-weight: 300;
 }
 
 .nav-links a:hover {
@@ -104,15 +108,28 @@ html {
     background-repeat: no-repeat;
     height: fit-content;
     width: 100%;
+    position: relative;
 }
-
+.drop-arrow-scroll{
+    position: absolute;
+    bottom: -20px;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #8bc540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
 .banner-container {
     padding-top: 120px;
     text-align: center;
 }
 
 .banner-container h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 800;
     color: #8bc540;
     text-align: center;
@@ -135,11 +152,21 @@ html {
 }
 
 .our-story {
-    padding: 60px 0px;
+    padding-top: 0px;
+    padding-bottom: 60px;
 }
 
-.our-stry-container {
+.our-stry-containertwo {
     text-align: center;
+}
+.our-stry-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: url('img/Network.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .our-stry-container h1 {
@@ -159,12 +186,12 @@ html {
     width: 100%;
 }
 
-.our-stry-container img {
+.our-stry-containertwo img {
     width: 100%;
 }
 
 .cards {
-    padding: 40px 0px;
+    padding: 80px 0px;
     background-color: #e6e6e6;
 }
 
@@ -172,37 +199,33 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cards-container .card {
-    width: 280px;
-    margin: 5px;
+    height: 458px;
+    width: 290px;
+    margin: 10px 4px;
     background-color: #ffffff;
     box-shadow: 10px 2px 16px #00000033;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
-    min-height: 520px;
     overflow: hidden;
 }
-
-font-size: 60px;
-font-weight: 800;
-color: #8bc540;
-text-align: center;
-
 .cards-container .card .card-info {
-    padding: 20px;
+    padding: 20px 20px;
 }
 
 .cards-container .card .card-info h3 {
     font-size: 18px;
     color: #004316;
-    margin: 10px 0font-size: 60px;
-    font-weight: 800;
-    color: #8bc540;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d3814;
     text-align: center;
-    nter;
     line-height: 26px;
+    letter-spacing: 1.2px !important;
 }
 
 .cards-container .card .card-info p {
@@ -212,6 +235,7 @@ text-align: center;
     margin: 30px 0px 10px !important;
     text-align: center;
     line-height: 28px;
+    font-weight: 300;
 }
 
 .breath {
@@ -221,9 +245,10 @@ text-align: center;
 
 .breath-container h1 {
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 200;
     color: #071304;
     text-align: center;
+    margin: 10px 0px 30px;
 }
 
 .breath-cards {
@@ -234,7 +259,9 @@ text-align: center;
 }
 
 .breath-card {
-    width: 280px;
+    width: 100%;
+    max-width: 320px;
+    min-width: 300px;
     text-align: center;
     margin: 18px 10px;
 }
@@ -249,10 +276,15 @@ text-align: center;
 
 .breath-card-info h2 {
     color: #8bc540;
+    font-weight: 800;
+    font-size: 22px;
+    margin: 10px 0px;
 }
 
 .breath-card-info p {
     color: #000000;
+    line-height: 24px;
+    font-weight: 300;
 }
 
 .musketeers {
@@ -363,12 +395,13 @@ text-align: center;
     flex-wrap: wrap;
 }
 .partner{
-    width: 200px;
-    margin: 15px;
+    width: 160px;
+    margin: 15px 20px;
 }
 .partner img{
     width: 100%;
 }
+
 footer{
     background-color: #004316;
 }
