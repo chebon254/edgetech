@@ -376,7 +376,7 @@ footer{
     padding: 30px 0px;
     border-bottom: 2px solid #ffffff;
 }
-.top-foot, social-icons.ft{
+.top-foot, .social-icons.ft{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -385,6 +385,45 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.social-media.ft span{
+    color: #ffffff;
+}
+.social-icons.ft{
+    padding-left: 20px;
+}
+.social-icons.ft a{
+    padding: 2px;
+    margin: 0px 3px;
+}
+.social-icons.ft a img{
+    width: 34px;
+}
+.top-foot-fm{
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+.top-foot-fm .icon img{
+    width: 34px;
+}
+.top-foot-fm input{
+    height: 40px;
+    width: 100%;
+    max-width: 280px;
+    max-width: 220px;
+    margin: 0px 10px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+.top-foot-fm input::placeholder{
+    color: #8bc540;
+}
+.top-foot-fm button{
+    height: 40px;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: #8bc540;
+    color: #ffffff;
 }
 .middle-foot{
     text-align: center;
@@ -405,13 +444,97 @@ footer{
     max-width: 800px;
     margin: 10px auto 20px;
     text-align: center;
-}.bottom-foot{
+}
+.bottom-foot{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 30px 0px;
+}
+.bottom-foot .column.one,
+.bottom-foot .column.two{
+    width: 280px;
+}
+.bottom-foot .column.three{
+    width: 560px;
+    text-align: center;
+}
+.bottom-foot .column h3{
+    color: #8bc540;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+}
+.bottom-foot .column ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px;
+}
+.bottom-foot .column ul li .icon{
+    padding: 0px 10px 0px 0px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.bottom-foot .column ul li .icon img{
+    width: 32px;
+}
+.bottom-foot .column ul li .text{
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    padding-left: 10px;  
+}
+.column.three .fm-ctrl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    flex-wrap: wrap
+}
+.column.three .fm-ctrl input{
+    height: 40px;
+    width: 265px;
+    outline: none;
+    border: 0px;
+    background-color: #ffffff;
+    color: #0d3814;
+    padding: 4px 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+.column.three .fm-ctrl input::placeholder,
+.column.three textarea::placeholder{
+    color: #8bc540;
+}
+.column.three textarea{
+    height: 100px;
+    width: 100%;
+    max-width: 550px;
+    min-width: 265px;
+    outline: none;
+    border: 0px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #0d3814;
+    padding: 10px 10px;
+    margin: 5px;
+}
+.column.three button{
+    height: 50px;
+    width: 200px;
+    margin: 12px auto 10px !important;
+    background-color: #8bc540;
+    color: #ffffff;
 }
 .footer-copyright{
     padding: 30px 0px 50px;
+    border-top: 2px solid #ffffff;
 }
 .footer-copyright, .ft-logo, .ft-links {
     display: flex;
