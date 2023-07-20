@@ -72,7 +72,9 @@ html {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+nav{
+    position: relative;
+}
 .nav-container,
 .nav-links {
     display: flex;
@@ -83,6 +85,7 @@ html {
 .nav-container {
     padding-top: 30px;
     padding-bottom: 40px;
+    position: relative;
 }
 
 .nav-container .logo img {
@@ -100,6 +103,14 @@ html {
 
 .nav-links a:hover {
     color: #97b051;
+}
+.menu-bar{
+    padding: 5px;
+}
+.menu-btn{
+    font-size: 28px;
+    color: #000000;
+    padding: 10px 20px;
 }
 
 .banner {
@@ -129,14 +140,14 @@ html {
 }
 
 .banner-container h1 {
-    font-size: 50px;
+    font-size: 3.3rem;
     font-weight: 800;
     color: #8bc540;
     text-align: center;
 }
 
 .banner-container p {
-    font-size: 26px;
+    font-size: 1.73rem;
     font-weight: 500;
     color: #ffffff;
     text-align: center;
@@ -147,7 +158,8 @@ html {
 
 .banner-container img {
     margin: auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     vertical-align: middle;
 }
 
@@ -177,7 +189,7 @@ html {
 }
 
 .our-stry-container p {
-    font-size: 26px;
+    font-size: 1.73rem;
     font-weight: 400;
     color: #000000;
     text-align: center;
@@ -301,7 +313,6 @@ html {
 }
 
 .musketeers-container h1 {
-    font-size: 60px;
     font-weight: 800;
     color: #8bc540;
     text-align: center;
@@ -317,8 +328,8 @@ html {
     color: #ffffff;
     text-align: center;
     line-height: 40px;
-    margin: 20px 20px;
-    width: 100%;
+    margin: 20px auto;
+    width: 90%;
 }
 
 .musketeers-container img.circles {
@@ -373,14 +384,12 @@ html {
 }
 
 .partners-container h1 {
-    font-size: 60px;
     font-weight: 800;
     color: #004316;
     text-align: center;
 }
 
 .partners-container p {
-    font-size: 26px;
     font-weight: 400;
     color: #000000;
     text-align: center;
@@ -470,7 +479,7 @@ footer{
 .middle-foot h1{
     font-weight: 800;
     color: #8bc540;
-    font-size: 50px;
+    font-size: 3.3rem;
     margin: 40px 0px;
     text-align: center;
 }
@@ -579,7 +588,7 @@ footer{
     color: #ffffff;
 }
 .footer-copyright{
-    padding: 30px 0px 50px;
+    padding: 30px 15px 50px;
     border-top: 2px solid #ffffff;
 }
 .footer-copyright, .ft-logo, .ft-links {
@@ -603,4 +612,108 @@ footer{
     color: #ffffff;
     text-align: center;
     width: fit-content;
+    line-height: 20px;
 }
+
+/* == RESPONSIVE == */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 994px){
+    .logo img{
+        width: 180px !important;
+    }
+}
+@media only screen and (max-width: 994px) {
+    
+    ::-webkit-scrollbar {
+        width: 4px !important;
+    }
+    .links{
+        height: 100vh;
+        width: 320px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        display: block;
+        padding: 80px 0px 0px;
+        text-align: centers;
+        transition: all ease 0.5s;
+
+        z-index: 5;
+        background-color: #ffffff;
+        overflow: auto;
+    }
+    .links a{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100% !important;
+        height: 50px;
+        color: #0e3155 ;
+        padding: 0px 50px 0px;
+    }
+    .links a:hover{
+        background-color: #f1f1f1;
+    }
+    .links span{
+        cursor: pointer;
+    }
+    .links.active{
+        right: 0%;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .cancel-btn{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #0e315533;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0e3155;
+        font-size: 18px;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+    .musketeers-container h1 {
+        font-size: 2.8em;
+    }
+    .partners-container h1 {
+        font-size: 3em;
+    }
+    
+    .partners-container p {
+        font-size: 1.33rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .links{
+        padding: 0px 20px;
+        display: block;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between;
+    }
+    .menu-bar{
+        display: none !important;
+    }
+    .cancel{
+        display: none;
+    }
+    .musketeers-container h1 {
+        font-size: 4em;
+    }
+    .partners-container h1 {
+        font-size: 4em;
+    }
+    
+    .partners-container p {
+        font-size: 1.73rem;
+    }
+}
+/* == || RESPONSIVE == */
