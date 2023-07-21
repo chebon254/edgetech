@@ -594,8 +594,8 @@ footer{
     color: #ffffff;
 }
 .footer-copyright{
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    margin: auto;
     padding: 30px 15px 50px;
     border-top: 2px solid #ffffff;
 }
