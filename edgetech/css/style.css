@@ -267,12 +267,6 @@ nav{
     margin: 10px 0px 30px;
 }
 
-.breath-cards {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 .breath-card {
     width: 100%;
@@ -301,6 +295,7 @@ nav{
     color: #000000;
     line-height: 24px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .musketeers {
