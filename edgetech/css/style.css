@@ -419,11 +419,6 @@ footer{
     flex-wrap: wrap;
     min-width: 300px;
 }
-.top-foot, .social-icons.ft{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .social-media.ft{
     display: flex;
     align-items: center;
@@ -432,9 +427,6 @@ footer{
 }
 .social-media.ft span{
     color: #ffffff;
-}
-.social-icons.ft{
-    padding-left: 20px;
 }
 .social-icons.ft a{
     padding: 2px;
@@ -539,7 +531,7 @@ footer{
 }
 .bottom-foot .column.three{
     width: 560px;
-    text-align: center;
+    text-align: start;
     margin: 10px 0px;
 }
 .column.three .fm-ctrl{
